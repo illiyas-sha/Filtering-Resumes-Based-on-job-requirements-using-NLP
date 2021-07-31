@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Resume Ranking Results</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/main.css" />
+		<noscript><link rel="stylesheet" href="/static/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Resume Ranking</h1>
+						<p>  &nbsp;&bull;&nbsp; Ranking resumes which suits best for the job description &nbsp;&bull;&nbsp; </p> <br>
+						<div>
+							<table style="border-spacing: 15px;border-color: #000000;border-collapse: separate ;width:500px;margin:auto;background-color:#070505; text-align: center; background-image: linear-gradient(rgb(243, 117, 117), rgb(31, 155, 172));" >
+								
+								<tr > 
+								<td align="center" colspan="3" >
+								<h3>Resume Ranking according to the percentage match</h3>
+								</td>
+								</tr>
+								 {% for item in result %}
+									
+								
+									<tr>
+									   <td> {{ loop.index }}</td>
+									   <td> {{ item[0] }} </td>
+									   <td> {{ item[1] }} </td>
+									</tr>
+							
+								 {% endfor %}
+								
+							</table>
+						</div>
+						<!-- <nav>
+							<ul>
+								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</nav> -->
+					</header>
+					
+				<!-- Footer -->
+					<footer id="footer">
+						<h3><span class="copyright">  <a href="http://illiyassha.tech"> MOHAMED ILLIYAS -- ARUN PRAGADEESWAR -- ARAVIND SHIVA </a></span></h3>
+					</footer>
+
+			</div>
+		</div>
+	
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>

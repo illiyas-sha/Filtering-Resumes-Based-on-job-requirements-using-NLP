@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body{
+	background-image: url("D:/Illiyas ALL/Flask/nlp/static/bg4.jpg");
+	background-repeat: no-repeat  ;
+	background-size : cover;
+    }
+	
+.box{
+	width: 420px;
+	height: 450px;
+	margin: 8% auto;
+	border-radius: 10px;
+	position: relative;
+}
+
+.logo{
+	position: absolute;
+    width: 100px;
+    height: 90px;
+
+	top: 20px;
+
+	left: calc(50% - 65px);
+}
+
+h3{
+	text-align: center;
+	
+    margin-bottom: 50px;
+	margin-top: 100px;
+	color: rgb(190, 74, 74);
+
+
+}
+
+
+.box form{
+	width: 280px;
+	position: absolute;
+	top: 50px;
+	left: 70px;
+
+}
+form input{
+	width: 100%;
+	padding: 10px 5px;
+	margin: 5px 0;
+	border: 0;
+	border-bottom: 1px solid #999;
+    outline: none;
+	
+
+}
+.buttonbox{
+	
+	margin : 30px auto;
+	text-align: center; 
+}
+
+form button{
+	width: 100px;
+	height: 40px;
+	margin: 0 10px;
+	background: linear-gradient(to right, yellow, red);
+	border-radius: 30px;
+	border:0;
+	color: #fff;
+	cursor: pointer;
+
+}
